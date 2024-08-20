@@ -16,19 +16,13 @@ public class Main {
 
         array.display();
 
-        int searchKey = 55;
+        int searchKey = 75;
 
-        if(array.find(searchKey)){
+        if(array.find(searchKey) != array.length()){
             System.out.println("Found " + searchKey);
         }else {
-            System.out.println("Did not find " + searchKey);
+            System.out.println("Did not find " + searchKey );
         }
-
-        array.delete(20);
-        array.delete(90);
-        array.delete(40);
-
-        array.display();
 
     }
 }
