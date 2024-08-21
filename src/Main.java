@@ -24,5 +24,8 @@ public class Main {
             System.out.println("Did not find " + searchKey );
         }
 
+        System.out.println("The maximum value is " + array.getMax());
+        System.out.println("The minimum value is " + array.getMin());
+
     }
 }

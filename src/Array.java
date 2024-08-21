@@ -73,6 +73,24 @@ public class Array {
         return true;
     }
 
+    public int getMax(){
+
+        if(elementCount == 0){
+            return -1;
+        }else {
+         return  arr[elementCount-1];
+        }
+    }
+
+    public int getMin(){
+
+        if(elementCount == 0){
+            return -1;
+        }else {
+            return  arr[0];
+        }
+    }
+
     public void display(){
         for(int i = 0;i < elementCount;i++){
             System.out.print(arr[i] + " ");
