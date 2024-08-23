@@ -97,4 +97,77 @@ public class Array {
         }
         System.out.println();
     }
+
+    public void swap(int one,int two){
+        int temp = arr[one];
+        arr[one] = arr[two];
+        arr[two] = temp;
+    }
+
+    public void bubbleSort(){
+
+        int i,j;
+
+        //Outer loop tracks the sorted items
+        for(j = elementCount-1;j > 1;j--){
+
+            //Inner loop starts at the left
+            for(i = 0;i < j;i++){
+                if(arr[i] > arr[i+1]){
+                    swap(i,i+1);
+                }
+            }
+        }
+    }
+
+    public void selectionSort(){
+        //Sorted items appear on the left
+        int i,j,temp;
+
+        //Outer loop acts as a marker for sorted items
+        for(j = 0;j < elementCount-1;j++){
+
+            //Store the index of the first item
+            temp = j;
+
+
+            //Inner loop starts at the second item
+            for(i = j+1;i < elementCount;i++){
+                if(arr[i] < arr[temp]){
+
+                    //Store index of smallest item
+                    temp = i;
+                }
+            }
+            swap(j,temp);
+        }
+    }
+
+    public void insertionSort(){
+        int i,j;
+
+        //Loop starts at the 2nd element
+        //We assume the fist element is already sorted
+
+        for(j = 1;j < elementCount;j++){
+
+            //Store the 2nd item in a temp variable
+            int temp = arr[j];
+
+            //Place a marker at the gap left by the 2nd item
+            i = j;
+
+            while(i > 0 && arr[i-1] > temp){
+
+                //Shift items to the right
+                arr[i] = arr[i-1];
+
+                //Move the marker to the gap left by the shifted item
+                i--;
+            }
+
+            //Store the item in the temp variable at the resulting gap
+            arr[i] = temp;
+        }
+    }
 }
