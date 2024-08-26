@@ -17,16 +17,16 @@ public class PriorityQueue {
 
         if(elementCount == 0){
             pqArray[elementCount] = item;
-        }else{
+        }else {
 
-            //Start at end of the array
+            //Loop backwards
             for(j = elementCount-1;j >= 0;j--){
                 if(item > pqArray[j]){
 
-                    //Shift to the right
+                    //Shift item to the right
                     pqArray[j+1] = pqArray[j];
                 }else{
-                    //End the loop when correct position is found
+                    //Break when you reach the correct spot
                     break;
                 }
             }
