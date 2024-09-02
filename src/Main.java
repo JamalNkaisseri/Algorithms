@@ -1,18 +1,24 @@
 public class Main {
     public static void main(String[] args) {
 
-        PriorityQueue thePq = new PriorityQueue(5);
+    LinkList theList = new LinkList();
 
-        thePq.insert(30);
-        thePq.insert(10);
-        thePq.insert(20);
-        thePq.insert(50);
-        thePq.insert(40);
+        theList.insertFirst(10,10.99);
+        theList.insertFirst(20,20.99);
+        theList.insertFirst(30,30.99);
+        theList.insertFirst(40,40.99);
 
-        while (!thePq.isEmpty()){
-            int value = thePq.remove();
-            System.out.print(value + " ");
-        }
+
+        theList.displayList();
+
+      Link f = theList.find(50);
+
+      if(f == null){
+          System.out.println("Item does not exist");
+      }else{
+          System.out.println("Found " + f.iData);
+      }
+
 
 
     }
