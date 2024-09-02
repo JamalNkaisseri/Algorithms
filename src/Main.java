@@ -1,24 +1,17 @@
 public class Main {
     public static void main(String[] args) {
 
-    LinkList theList = new LinkList();
+        DoubleEndedList firstLast = new DoubleEndedList();
 
-        theList.insertFirst(10,10.99);
-        theList.insertFirst(20,20.99);
-        theList.insertFirst(30,30.99);
-        theList.insertFirst(40,40.99);
+        firstLast.insertFirst(10);
+        firstLast.insertFirst(20);
+        firstLast.insertFirst(30);
 
+        firstLast.insertLast(40);
+        firstLast.insertLast(50);
+        firstLast.insertLast(60);
 
-        theList.displayList();
-
-      Link f = theList.find(50);
-
-      if(f == null){
-          System.out.println("Item does not exist");
-      }else{
-          System.out.println("Found " + f.iData);
-      }
-
+        firstLast.displayList();
 
 
     }
