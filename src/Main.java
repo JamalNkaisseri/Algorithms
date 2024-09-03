@@ -1,17 +1,19 @@
 public class Main {
     public static void main(String[] args) {
 
-        DoubleEndedList firstLast = new DoubleEndedList();
+       LinkStack stack = new LinkStack();
 
-        firstLast.insertFirst(10);
-        firstLast.insertFirst(20);
-        firstLast.insertFirst(30);
+        stack.push(10);
+        stack.push(20);
+        stack.push(30);
+        stack.push(40);
+        stack.push(50);
 
-        firstLast.insertLast(40);
-        firstLast.insertLast(50);
-        firstLast.insertLast(60);
+        stack.displayStack();
 
-        firstLast.displayList();
+        stack.pop();
+
+        stack.displayStack();
 
 
     }
