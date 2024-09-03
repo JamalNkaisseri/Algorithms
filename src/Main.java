@@ -1,19 +1,20 @@
 public class Main {
     public static void main(String[] args) {
 
-       LinkStack stack = new LinkStack();
+      LinkQueue queue = new LinkQueue();
 
-        stack.push(10);
-        stack.push(20);
-        stack.push(30);
-        stack.push(40);
-        stack.push(50);
+        queue.insert(10);
+        queue.insert(20);
+        queue.insert(30);
+        queue.insert(40);
+        queue.insert(50);
 
-        stack.displayStack();
+        queue.displayQueue();
 
-        stack.pop();
+        queue.delete();
 
-        stack.displayStack();
+        queue.displayQueue();
+
 
 
     }
