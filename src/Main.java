@@ -1,27 +1,28 @@
 public class Main {
     public static void main(String[] args) {
 
-    SortedList theList = new SortedList();
+    DoublyLinkedList theList = new DoublyLinkedList();
 
-        theList.insert(20);
-        theList.insert(10);
-        theList.insert(560);
-        theList.insert(1);
-        theList.insert(45);
-        theList.insert(18);
+        theList.insertFirst(30);
+        theList.insertFirst(20);
+        theList.insertFirst(10);
 
-        theList.displayList();
+        theList.displayForward();
 
-        theList.remove();
-        theList.remove();
+        theList.deleteKey(20);
 
-        theList.displayList();
+        theList.displayForward();
 
-        theList.insert(7);
-        theList.insert(33);
-        theList.insert(78);
+        theList.insertLast(40);
+        theList.insertLast(50);
+        theList.insertLast(60);
 
-        theList.displayList();
+        theList.displayForward();
+
+        theList.insertAfter(10,20);
+
+        theList.displayForward();
+
 
 
 

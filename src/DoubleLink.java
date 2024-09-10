@@ -2,6 +2,7 @@ public class DoubleLink {
 
    public int iData;
    public DoubleLink next;
+   public DoubleLink previous;
 
    public DoubleLink(int iD){
        iData = iD;
