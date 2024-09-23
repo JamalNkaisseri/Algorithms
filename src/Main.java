@@ -1,31 +1,32 @@
 public class Main {
     public static void main(String[] args) {
 
-       DynamicArray array;
+      int maxSize = 16;
 
-       array = new DynamicArray(100);
+      Array array = new Array(maxSize);
 
-        array.insert(64);
-        array.insert(21);
-        array.insert(33);
-        array.insert(70);
-        array.insert(12);
-        array.insert(85);
-        array.insert(44);
-        array.insert(3);
-        array.insert(99);
-        array.insert(0);
-        array.insert(108);
-        array.insert(36);
-        array.insert(7);
-        array.insert(134);
-        array.insert(47);
+      array.insert(149);
+      array.insert(192);
+      array.insert(47);
+      array.insert(152);
+      array.insert(159);
+      array.insert(195);
+      array.insert(61);
+      array.insert(66);
+      array.insert(17);
+      array.insert(167);
+      array.insert(118);
+      array.insert(64);
+      array.insert(27);
+      array.insert(80);
+      array.insert(30);
+      array.insert(105);
 
-        array.display();
+      array.display();
 
-        array.mergeSort();
+      array.quickSort();
 
-        array.display();
+      array.display();
 
 
 

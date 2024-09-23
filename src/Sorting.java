@@ -1,4 +1,4 @@
-public class SimpleSorting {
+public class Sorting {
 
     public void insertionSort(int[] array){
         int i,j;
